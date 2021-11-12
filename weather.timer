@@ -1,0 +1,10 @@
+[Unit]
+Description=Hourly timer for to run the weather script
+
+[Timer]
+Unit=weather.service
+OnCalendar=daily
+Persistent=true
+
+[Install]
+WantedBy=timers.target
